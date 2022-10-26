@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: linear-gradient(360deg, #423F3D 0%, #44403F 100%);">
+  <div class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <button class="header__burger">
+              <span></span>
+              <p>меню</p>
+            </button>
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="логотип">
+          </a>
+            <form class="header__input-box">
+              <input class="header__input" type="text" placeholder="Введите адрес доставки">
+              <button class="header__input-btn" type="submit">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.0183 18.4851L21.5423 22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>              
+              </button>
+            </form>
+          <div class="header__contact">
+            <a class="header__contact-small" href="tel:+380645105759">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99329 3.249C2.20417 2.89915 3.36678 1.62917 4.19526 1.66751C4.44311 1.68873 4.66222 1.83798 4.84024 2.01187H4.84092C5.249 2.4117 6.41982 3.92062 6.48555 4.23829C6.64782 5.01739 5.7187 5.46651 6.00284 6.25178C6.72725 8.02428 7.97544 9.27236 9.74879 9.99602C10.5334 10.2808 10.9826 9.35246 11.7618 9.51404C12.0795 9.58045 13.5892 10.7505 13.9884 11.1592V11.1592C14.1616 11.3365 14.3123 11.5563 14.3328 11.8041C14.3636 12.677 13.0148 13.8553 12.7518 14.0059C12.1315 14.4502 11.3222 14.442 10.3356 13.9833C7.58243 12.8379 3.1826 8.52132 2.01588 5.66437C1.56946 4.6833 1.53934 3.86859 1.99329 3.249Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.71027 1.83331C12.1783 2.10731 14.1269 4.05398 14.4043 6.52131" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.71027 4.19531C10.8903 4.42531 11.8123 5.34731 12.0423 6.52731" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </a>
+            <span class="header__contact-span">Контакты:</span>
+            <a class="header__contact-phone" href="tel:+380645105759">+38 (064) 510-57-59</a>
+          </div>
+            <div class="header__btn-box">
+              <a class="header__btn" href="#">
+                Корзина
+                <span class="header__btn-value">4</span>
+              </a>
+            </div>
+        </div>
+      </div>
+      </div>
+      <nav class="header__menu menu">
+        <div class="container">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">
+            Холодные закуски
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Горячие закуски
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Мясные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Супы
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Рыбные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Гриль меню
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Фирменные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Напитки
+          </a>
+        </li>
+        </ul>
+      </div>
+      </nav>
+  </div>
+  <main class="main">
+    <section class="basket">
+        <a class="baset__exit" href="index.html">
+          <span><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.6967C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.46967 5.46967ZM2 5.25L1 5.25L1 6.75L2 6.75L2 5.25Z" fill="white"/>
+           </svg></span> к выбору блюда
+        </a>
+        <h2 class="basket__title">
+          корзина
+          <span>(в корзине 3 товара)</span>
+        </h2>
+        <div class="basket__inner">
+          <div class="basket__items">
+            <div class="basket__item">
+              <div class="basket__item-images">
+                <img class="basket__item-img" src="images/product-img.jpg" alt="foto">
+              </div>
+              <div class="basket__item-box">
+                  <p class="basket__item-name">
+                    пицца двойная пепперони
+                    <span>
+                      Кальмары, мидии, креветки, сыр маасдам, красный лук, микс оливок, базилик, соус песто
+                    </span>
+                  </p>
+                  <input class="basket__item-amount" min="0" type="number" value="1">
+                  <p class="basket__item-total-sum">
+                    1640 ₽
+                  </p>
+                  <a class="basket__item-dell" href="">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.60349 7.14369L6.53113 5.07133L8.60349 2.99898C9.11263 2.48984 9.10176 1.64546 8.59243 1.13613C8.0831 0.626803 7.23872 0.615935 6.72958 1.12508L4.65723 3.19743L2.58487 1.12508C2.07573 0.615935 1.23135 0.626803 0.722023 1.13613C0.212696 1.64546 0.201827 2.48984 0.710967 2.99898L2.78332 5.07133L0.710968 7.14369C0.201827 7.65283 0.212696 8.49721 0.722023 9.00654C1.23135 9.51587 2.07573 9.52673 2.58487 9.01759L4.65723 6.94524L6.72958 9.01759C7.23872 9.52673 8.0831 9.51587 8.59243 9.00654C9.10176 8.49721 9.11263 7.65283 8.60349 7.14369Z" fill="white"/>
+                      </svg>                
+                  </a>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__item-images">
+                <img class="basket__item-img" src="images/product-img.jpg" alt="foto">
+              </div>
+              <div class="basket__item-box">
+                  <p class="basket__item-name">
+                    пицца двойная пепперони
+                    <span>
+                      Кальмары, мидии, креветки, сыр маасдам, красный лук, микс оливок, базилик, соус песто
+                    </span>
+                  </p>
+                  <input class="basket__item-amount" min="0" type="number" value="1">
+                  <p class="basket__item-total-sum">
+                    1640 ₽
+                  </p>
+                  <a class="basket__item-dell" href="">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.60349 7.14369L6.53113 5.07133L8.60349 2.99898C9.11263 2.48984 9.10176 1.64546 8.59243 1.13613C8.0831 0.626803 7.23872 0.615935 6.72958 1.12508L4.65723 3.19743L2.58487 1.12508C2.07573 0.615935 1.23135 0.626803 0.722023 1.13613C0.212696 1.64546 0.201827 2.48984 0.710967 2.99898L2.78332 5.07133L0.710968 7.14369C0.201827 7.65283 0.212696 8.49721 0.722023 9.00654C1.23135 9.51587 2.07573 9.52673 2.58487 9.01759L4.65723 6.94524L6.72958 9.01759C7.23872 9.52673 8.0831 9.51587 8.59243 9.00654C9.10176 8.49721 9.11263 7.65283 8.60349 7.14369Z" fill="white"/>
+                      </svg>                
+                  </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="add-order">
+      <h2 class="add-order__title">
+        Добавить к заказу
+      </h2>
+      <div class="add-order__inner">
+        <div class="add-order__item">
+          <img class="add-order__img" src="images/product-img.jpg" alt="foto">
+          <p class="add-order__product-name">квас ананасовый</p>
+          <a class="add-order__btn" href="#">Добавить</a>
+          <p class="add-order__sum">1640 ₽</p>
+        </div>
+        <div class="add-order__item">
+          <img class="add-order__img" src="images/product-img.jpg" alt="foto">
+          <p class="add-order__product-name">квас ананасовый</p>
+          <a class="add-order__btn" href="#">Добавить</a>
+          <p class="add-order__sum">1640 ₽</p>
+        </div>
+        <div class="add-order__item">
+          <img class="add-order__img" src="images/product-img.jpg" alt="foto">
+          <p class="add-order__product-name">квас ананасовый</p>
+          <a class="add-order__btn" href="#">Добавить</a>
+          <p class="add-order__sum">1640 ₽</p>
+        </div>
+        <div class="add-order__item">
+          <img class="add-order__img" src="images/product-img.jpg" alt="foto">
+          <p class="add-order__product-name">квас ананасовый</p>
+          <a class="add-order__btn" href="#">Добавить</a>
+          <p class="add-order__sum">1640 ₽</p>
+        </div>
+      </div>
+    </section>
+    <div class="total-order">
+      <div class="total-order__item">
+        <p class="total-order__sum">
+          Итого:<span>500 ₽</span>
+        </p>
+        <p class="total-order__deliv">
+          До бесплатной доставки не хватет: <span>100 ₽</span>
+        </p>
+        <p class="total-order__deliv">
+          Минимальная сума заказа 1500 ₽
+        </p>
+      </div>
+      <a class="total-order__btn" href="order-list.html">
+        Оформить заказ
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer basket-footer">
+    <div class="container">
+    </div>
+    <div class="footer__end">
+      <div class="container">
+        <div class="footer__end-inner">
+          <a class="down-up" href="#">
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.0607 0.939577C12.4749 0.353795 11.5252 0.353801 10.9394 0.939592L1.3935 10.4856C0.807718 11.0714 0.807724 12.0211 1.39351 12.6069C1.9793 13.1927 2.92905 13.1927 3.51483 12.6069L12.0001 4.12156L20.4854 12.6068C21.0712 13.1926 22.0209 13.1926 22.6067 12.6068C23.1925 12.021 23.1925 11.0712 22.6067 10.4855L13.0607 0.939577ZM13.5001 4.0001L13.5 2.00023L10.5 2.00025L10.5001 4.00012L13.5001 4.0001Z" fill="
+              #222021"/>
+              </svg>
+          </a>
+          <div class="footer__end-inform inform">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="images/logo.svg" alt="логотип">
+            </a>
+            <p class="inform__copiright">
+              © ООО СК «АПШЕРОН» <br> Все права защищены. 2010-2020
+            </p>
+            <a class="inform__link" href="#">
+              Пользовательское соглашение
+            </a>
+            <a class="inform__link" href="#">
+              Карта сайта
+            </a>
+            <a class="inform__link" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+          <div class="footer__end-menu menu-footer">
+            <nav class="menu-footer__wrapper">
+              <ul class="menu-footer__items">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    О ресторане
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Условия доставки
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Возврат товара
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Акции
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/mainjs.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Food</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: linear-gradient(360deg, #423F3D 0%, #44403F 100%);">
+  <div class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <button class="header__burger">
+              <span></span>
+              <p>меню</p>
+            </button>
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="логотип">
+          </a>
+            <form class="header__input-box">
+              <input class="header__input" type="text" placeholder="Введите адрес доставки">
+              <button class="header__input-btn" type="submit">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.0183 18.4851L21.5423 22" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>              
+              </button>
+            </form>
+          <div class="header__contact">
+            <a class="header__contact-small" href="tel:+380645105759">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99329 3.249C2.20417 2.89915 3.36678 1.62917 4.19526 1.66751C4.44311 1.68873 4.66222 1.83798 4.84024 2.01187H4.84092C5.249 2.4117 6.41982 3.92062 6.48555 4.23829C6.64782 5.01739 5.7187 5.46651 6.00284 6.25178C6.72725 8.02428 7.97544 9.27236 9.74879 9.99602C10.5334 10.2808 10.9826 9.35246 11.7618 9.51404C12.0795 9.58045 13.5892 10.7505 13.9884 11.1592V11.1592C14.1616 11.3365 14.3123 11.5563 14.3328 11.8041C14.3636 12.677 13.0148 13.8553 12.7518 14.0059C12.1315 14.4502 11.3222 14.442 10.3356 13.9833C7.58243 12.8379 3.1826 8.52132 2.01588 5.66437C1.56946 4.6833 1.53934 3.86859 1.99329 3.249Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.71027 1.83331C12.1783 2.10731 14.1269 4.05398 14.4043 6.52131" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.71027 4.19531C10.8903 4.42531 11.8123 5.34731 12.0423 6.52731" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </a>
+            <span class="header__contact-span">Контакты:</span>
+            <a class="header__contact-phone" href="tel:+380645105759">+38 (064) 510-57-59</a>
+          </div>
+            <div class="header__btn-box">
+              <a class="header__btn" href="basket.html">
+                Корзина
+                <span class="header__btn-value">4</span>
+              </a>
+            </div>
+        </div>
+      </div>
+      </div>
+      <nav class="header__menu menu">
+        <div class="container">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">
+            Холодные закуски
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Горячие закуски
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Мясные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Супы
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Рыбные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Гриль меню
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Фирменные блюда
+          </a>
+        </li>
+          <li class="menu__item"><a class="menu__link" href="#">
+            Напитки
+          </a>
+        </li>
+        </ul>
+      </div>
+      </nav>
+  </div>
+  <main class="main">
+    <section class="sale">
+      <div class="container">
+        <h2 class="sale__title">акции</h2>
+      </div>
+        <div class="sale__line"></div>
+        <div class="container">
+        <div class="sale__items">
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/01.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Без мяса? Здесь!</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/02.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Выгодное комбо c напитками</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/03.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Сырный бортик</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/02.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Выгодное комбо c напитками</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/03.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Сырный бортик</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/01.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Без мяса? Здесь!</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/03.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Сырный бортик</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/02.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Выгодное комбо c напитками</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+          <div class="sale__item">
+            <div class="sale__images">
+              <img class="sale__img" src="images/sale/01.jpg" alt="sale1">
+            </div>
+            <div class="sale__content">
+              <h5 class="sale__title-content">Без мяса? Здесь!</h5>
+              <p class="sale__text">
+                Самое время попробовать «Сырную» пиццу, «Маргариту», пиццу «Овощи и грибы», Пасту Четыре сыра, Томатный суп с гренками, Грибной Стартер, Рулетики с сыром, Картофель из печи, Картофельные оладьи или Греческий салат. Выберите свой вкус!
+              </p>
+              <data class="sale__end">до 31 июля.</data>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top-contact contact-box">
+          <h4 class="contact-box__title">
+            контакты
+          </h4>
+          <div class="contact-box__text">
+            <span>Наш адрес:</span>
+            МО, городской округ Красногорск, село Ильинкое, Экспериментальная улица, 10
+          </div>
+          <div class="contact-box__text">
+            <span>Наша почта:</span>
+            <a class="contact-box__link" href="mailto:auto.wash@gmail.com">auto.wash@gmail.com</a>
+          </div>
+          <div class="contact-box__booking">
+              <button class="contact-box__booking-btn">
+                забронировать стол
+              </button>
+            <div class="contact-box__booking-box">
+              <a class="contact-box__booking-link" href="tel:380674448899">38 (067) 444-88-99
+              </a>
+              <span>Звоните или оставляйте заявку</span>
+            </div>
+          </div>
+          <div class="contact-box__social">
+            <span>Мы в соц сетях:</span>
+            <a class="contact-box__social-link" href="#">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_19_332)">
+                <path d="M16.625 0H2.375C1.06519 0 0 1.06519 0 2.375V16.625C0 17.9348 1.06519 19 2.375 19H9.5V12.4688H7.125V9.5H9.5V7.125C9.5 5.15731 11.0948 3.5625 13.0625 3.5625H15.4375V6.53125H14.25C13.5945 6.53125 13.0625 6.4695 13.0625 7.125V9.5H16.0312L14.8438 12.4688H13.0625V19H16.625C17.9348 19 19 17.9348 19 16.625V2.375C19 1.06519 17.9348 0 16.625 0Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_332">
+                <rect width="19" height="19" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>                
+            </a>
+            <a class="contact-box__social-link" href="#">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_19_336)">
+                <path d="M11.2115 10.4714C10.9069 10.294 10.4836 10.294 10.1396 10.294H9.01009V12.6215H10.0468C10.4305 12.6215 10.92 12.6491 11.2509 12.4167C11.5547 12.2122 11.7267 11.8109 11.7267 11.4287C11.7267 11.0736 11.5153 10.6489 11.2115 10.4714ZM10.7854 8.4837C11.0368 8.29231 11.1686 7.9511 11.1686 7.63681C11.1686 7.29541 11.01 6.96766 10.7193 6.79032C10.4151 6.61299 9.85916 6.65396 9.50211 6.65396H9.01009V8.7024H9.66104C10.0313 8.7022 10.4681 8.72951 10.7854 8.4837ZM16.3477 0H4.02695C2.18276 0 0.6875 1.49526 0.6875 3.33984V15.6602C0.6875 17.5043 2.18276 19 4.02695 19H16.3477C18.1918 19 19.6875 17.5043 19.6875 15.6602V3.33984C19.6875 1.49526 18.1918 0 16.3477 0ZM10.7029 14.3559H6.82133V4.9877H11.0623C12.2908 4.9877 13.4242 5.76967 13.4242 7.14895C13.4242 8.21394 12.8297 8.94326 12.0713 9.16988V9.19739C13.1958 9.42974 13.999 10.0405 13.999 11.514C13.999 12.8776 13.0704 14.3559 10.7029 14.3559Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_336">
+                <rect width="19" height="19" fill="white" transform="translate(0.6875)"/>
+                </clipPath>
+                </defs>
+                </svg>                             
+            </a>
+            <a class="contact-box__social-link" href="#"> 
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_19_339)">
+                <path d="M15.8125 0H3.93748C1.96982 0 0.375 1.59482 0.375 3.56248V15.4375C0.375 17.4052 1.96982 19 3.93748 19H15.8125C17.7802 19 19.375 17.4051 19.375 15.4375V3.56248C19.375 1.59482 17.7802 0 15.8125 0ZM15.7116 11.6268C15.6474 12.4177 15.0466 13.427 14.207 13.5731C11.5173 13.7821 8.33006 13.756 5.54422 13.5731C4.67496 13.4638 4.10379 12.4165 4.03967 11.6268C3.9043 9.96667 3.9043 9.02141 4.03967 7.36129C4.10379 6.57161 4.68923 5.53015 5.54422 5.43517C8.29804 5.20359 11.5031 5.25347 14.207 5.43517C15.1736 5.47078 15.6474 6.46711 15.7116 7.25798C15.8445 8.9181 15.8445 9.96667 15.7116 11.6268Z" fill="white"/>
+                <path d="M8.6875 11.875L12.25 9.5L8.6875 7.125V11.875Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_339">
+                <rect width="19" height="19" fill="white" transform="translate(0.375)"/>
+                </clipPath>
+                </defs>
+                </svg>                               
+            </a>
+            <a class="contact-box__social-link" href="#">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_19_366)">
+                <path d="M11.1799 8.27967C10.8033 7.75231 10.1855 7.40576 9.49239 7.40576C8.79929 7.40576 8.18152 7.75231 7.80484 8.27967C7.56376 8.62622 7.41309 9.04811 7.41309 9.50013C7.41309 10.6453 8.34727 11.5794 9.49239 11.5794C10.6375 11.5794 11.5717 10.6453 11.5717 9.50013C11.5717 9.04811 11.421 8.62622 11.1799 8.27967Z" fill="white"/>
+                <path d="M12.4909 8.29468C12.6416 8.59603 12.732 9.07818 12.732 9.50007C12.732 11.278 11.2856 12.7396 9.49253 12.7396C7.69951 12.7396 6.25304 11.2931 6.25304 9.50007C6.25304 9.06312 6.34344 8.59603 6.49412 8.29468H4.67096V13.1313C4.67096 13.7641 5.22845 14.3216 5.86128 14.3216H13.1238C13.7566 14.3216 14.3141 13.7641 14.3141 13.1313V8.29468H12.4909Z" fill="white"/>
+                <path d="M13.7717 4.94964H12.0239V6.9536H14.0128V5.20578V4.93457L13.7717 4.94964Z" fill="white"/>
+                <path d="M14.2236 0.00878906H4.7613C2.13957 0.00878906 0 2.14836 0 4.77009V14.2475C0 16.8541 2.13957 18.9937 4.7613 18.9937H14.2387C16.8604 18.9937 19 16.8541 19 14.2324V4.77009C18.9849 2.14836 16.8454 0.00878906 14.2236 0.00878906ZM15.3688 8.28079V13.1325C15.3688 14.3982 14.3894 15.3775 13.1237 15.3775H5.86122C4.59556 15.3775 3.61618 14.3982 3.61618 13.1325V8.28079V5.87001C3.61618 4.60435 4.59556 3.62497 5.86122 3.62497H13.1237C14.3894 3.62497 15.3688 4.60435 15.3688 5.87001V8.28079Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_19_366">
+                <rect width="19" height="19" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>                       
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__end">
+      <div class="container">
+        <div class="footer__end-inner">
+          <a class="down-up" href="#">
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.0607 0.939577C12.4749 0.353795 11.5252 0.353801 10.9394 0.939592L1.3935 10.4856C0.807718 11.0714 0.807724 12.0211 1.39351 12.6069C1.9793 13.1927 2.92905 13.1927 3.51483 12.6069L12.0001 4.12156L20.4854 12.6068C21.0712 13.1926 22.0209 13.1926 22.6067 12.6068C23.1925 12.021 23.1925 11.0712 22.6067 10.4855L13.0607 0.939577ZM13.5001 4.0001L13.5 2.00023L10.5 2.00025L10.5001 4.00012L13.5001 4.0001Z" fill="
+              #222021"/>
+              </svg>
+          </a>
+          <div class="footer__end-inform inform">
+            <a class="logo" href="index.html">
+              <img class="logo__img" src="images/logo.svg" alt="логотип">
+            </a>
+            <p class="inform__copiright">
+              © ООО СК «АПШЕРОН» <br> Все права защищены. 2010-2020
+            </p>
+            <a class="inform__link" href="#">
+              Пользовательское соглашение
+            </a>
+            <a class="inform__link" href="#">
+              Карта сайта
+            </a>
+            <a class="inform__link" href="#">
+              Политика конфиденциальности
+            </a>
+          </div>
+          <div class="footer__end-menu menu-footer">
+            <nav class="menu-footer__wrapper">
+              <ul class="menu-footer__items">
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    О ресторане
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Условия доставки
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Возврат товара
+                  </a>
+                </li>
+                <li class="menu-footer__item">
+                  <a class="menu-footer__link" href="#">
+                    Акции
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/mainjs.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
