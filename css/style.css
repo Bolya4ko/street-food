@@ -1418,6 +1418,7 @@ body {
   width: 120px;
   height: 60px;
 }
+
 .form-time {
   margin-bottom: 5px;
 }
@@ -1536,7 +1537,8 @@ body {
   height: 14px;
   margin: 1px 0 0 5px;
 }
-.form-order .jq-checkbox, .form-order .jq-radio {
+.form-order .jq-checkbox,
+.form-order .jq-radio {
   width: 25px;
   height: 25px;
 }
